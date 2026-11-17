@@ -106,7 +106,7 @@ Follow the steps below to run Career Compass locally.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Akshat-singh-spec/career-compass.git
+git clone https://github.com/tiya-15/career-compass.git
 ```
 
 ### 2. Navigate to the Project Directory
