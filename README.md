@@ -263,17 +263,6 @@ career-compass/
 
 ---
 
-## 👥 Team Members
-
-### Akshat Singh
-
-GitHub:  
-https://github.com/Akshat-singh-spec
-
-### Ishita Gupta
-
-GitHub:  
-https://github.com/ishitagup04-ish
 
 Career Compass was developed collaboratively as a team project, with both members contributing to the design, development, integration, debugging, and deployment of the application.
 
