@@ -1,0 +1,232 @@
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 82px;
+  padding: 0 55px;
+
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  text-decoration: none;
+
+  flex-shrink: 0;
+}
+
+.logo-icon {
+  font-size: 34px;
+  color: #2563eb;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  line-height: 1;
+}
+
+.career,
+.compass {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.career {
+  color: #1f2937;
+}
+
+.compass {
+  color: #2563eb;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 34px;
+
+  flex: 1;
+}
+
+.navbar-links a {
+  position: relative;
+
+  text-decoration: none;
+
+  color: #374151;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #2563eb;
+}
+
+.navbar-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -10px;
+
+  width: 0;
+  height: 3px;
+
+  background: #2563eb;
+
+  border-radius: 30px;
+
+  transition: 0.3s;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.active-link {
+  color: #2563eb !important;
+  font-weight: 600;
+}
+
+.active-link::after {
+  width: 100%;
+}
+
+/* ===========================
+   Right Buttons
+=========================== */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  flex-shrink: 0;
+}
+
+.assessment-btn,
+.login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 48px;
+
+  padding: 0 28px;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+}
+
+.assessment-btn {
+  min-width: 190px;
+
+  background: #2563eb;
+  color: white;
+}
+
+.assessment-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+}
+
+.login-btn {
+  min-width: 120px;
+
+  border: 2px solid #2563eb;
+
+  color: #2563eb;
+
+  background: white;
+}
+
+.login-btn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 1150px) {
+  .navbar {
+    height: auto;
+    padding: 20px 30px;
+
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-actions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .assessment-btn,
+  .login-btn {
+    flex: 1;
+  }
+}
+.navbar a {
+  margin: 0;
+}
+button.login-btn {
+  appearance: none;
+  -webkit-appearance: none;
+
+  margin: 0;
+  font: inherit;
+  line-height: 1;
+}
